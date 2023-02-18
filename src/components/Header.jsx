@@ -1,7 +1,7 @@
 import React from 'react'
 import bag from './assets/bag.svg'
 
-function Header() {
+function Header({count}) {
   const menuItems = [
     {
       id: 1,
@@ -39,7 +39,7 @@ function Header() {
         </p>
         <p className="grid grid-flow-col gap-2">
           <img width="24px" height="24px" className='cursor-pointer' src={bag} alt={bag} />
-          <span className='lg:block hidden font-medium text-[16px] text-[#4A5568]'>3 items</span>
+          <span className='lg:block hidden font-medium text-[16px] text-[#4A5568]'>{count} items</span>
         </p>
       </div>
     </div>

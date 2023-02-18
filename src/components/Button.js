@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Button({ label, width }) {
+function Button({ label, width,onClick }) {
   return (
     <button
-      className={`bg-[#3083CE] ${width} p-4 rounded-md text-white font-medium  hover:shadow-md`}
+      onClick={onClick}
+      className={`bg-[#1876D1] ${width} p-4 rounded-md text-white font-medium  hover:shadow-md`}
     >
       {label}
     </button>
